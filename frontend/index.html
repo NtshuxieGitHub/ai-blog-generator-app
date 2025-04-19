@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI Blog Generator</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
   </head>
 
   <body class="bg-black flex flex-col min-h-screen font-sans antialiased">
@@ -60,16 +62,26 @@
           </div>
         </div>
 
+        <!-- Section for loading circular progress and post -->
+        <div id="loading-section" class="load"></div>
+
         <!-- SECTION : Blog Post Display Section -->
         <section class="mt-10 flex-grow">
           <h2 class="text-xl text-white mb-4 font-semibold">
             Generated Blog Post
           </h2>
-          <div id="blogContent" class="mt-2 text-gray-300 space-y-4">
-            <!-- Section for loading circular progress and post -->
-          </div>
+          <div id="blogContent" class="mt-2 text-gray-300 space-y-4"></div>
         </section>
       </div>
     </div>
+
+    <!-- FOOTER SECTION -->
+    <footer class="text-center text-white p-4 mt-6">
+      Powered by
+      <a href="https://www.ncmatpro.com">Ntshuxeko Confidence Mathebula</a>
+    </footer>
+
+    <!-- JAVASCRIPT SECTION -->
+    <script></script>
   </body>
 </html>
