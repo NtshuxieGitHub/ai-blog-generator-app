@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Blog Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body class="bg-black flex flex-col min-h-screen font-sans antialiased">
+    <!-- NAVBAR -->
+    <nav class="bg-gray-800 p-5 text-white flex justify-between mb-10">
+      <div class="">
+        <h1 class="text-3xl font-bold">AI Blog Gen</h1>
+      </div>
+      <div class="">
+        <a href="#" class="text-white hover:underline">Sign Out</a>
+      </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <br />
+    <br />
+    <div class="flex-grow container mx-auto mt-10 px-4 sm:px-0">
+      <div
+        class="max-w-3xl mx-auto bg-gray-800 p-6 rounded-lg shadow-md transition-transform transform hover:scale-105 flex flex-col"
+      >
+        <!-- INTRODUCTION SECTION -->
+        <div class="text-center">
+          <h2 class="text-2xl text-white font-semibold mb-4">
+            Welcome to AI Blog Gen
+          </h2>
+          <p class="text-gray-300">
+            Generate high-quality blog articles from YouTube videos using
+            artificial intelligence. Simply paste the link to the YouTube video
+            below and let AI Blog Gen do the rest.
+          </p>
+        </div>
+
+        <br />
+
+        <!-- YOUTUBE SECTION -->
+        <div>
+          <h2 class="text-xl text-white mb-4 font-semibold">
+            Paste YouTube Video Link
+          </h2>
+          <div class="flex space-x-4">
+            <input
+              id="youtubeLink"
+              type="url"
+              placeholder="Paste YouTube Link..."
+              class="flex-grow p-2 border border-gray-300 rounded-md"
+            />
+            <button
+              id="generateBlogButton"
+              class="bg-white text-gray-800 font-semibold px-4 py-2 rounded-md hover:bg-gray-500 hover:text-white transition-colors duration-300"
+            >
+              Generate Post
+            </button>
+          </div>
+        </div>
+
+        <!-- Section for loading circular progress and post -->
+        <div id="loading-section" class="load"></div>
+
+        <!-- SECTION : Blog Post Display Section -->
+        <section class="mt-10 flex-grow">
+          <h2 class="text-xl text-white mb-4 font-semibold">
+            Generated Blog Post
+          </h2>
+          <div id="blogContent" class="mt-2 text-gray-300 space-y-4"></div>
+        </section>
+      </div>
+    </div>
+
+    <!-- FOOTER SECTION -->
+    <footer class="text-center text-white p-4 mt-6">
+      Powered by
+      <a href="https://www.ncmatpro.com">Ntshuxeko Confidence Mathebula</a>
+    </footer>
+
+    <!-- JAVASCRIPT SECTION -->
+    <script></script>
+  </body>
+</html>
